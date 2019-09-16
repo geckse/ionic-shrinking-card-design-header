@@ -8,17 +8,15 @@ import { Observable, fromEvent } from 'rxjs';
 })
 export class HeaderBarComponent implements OnInit {
 
-  @Input() hideBackBtn;
-  @Input() showMenuBtn;
-  @Input() showProfileBtn;
+  @Input() hideBackBtn: boolean;
+  @Input() showMenuBtn: boolean;
   @Input() backHref;
   @Input() fixed;
   @Input() header;
   @Input() content;
   @Input() actions: Array<{
       title: string,
-      icon: string,
-      action: any
+      icon: string
   }>;
   @Input() srollOffset;
   @Output() actionClick = new EventEmitter<any>();

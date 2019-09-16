@@ -24,7 +24,7 @@ ion-toolbar {
 }
 ion-buttons[slot='start'] {
   ion-button, ion-back-button {
-    padding-left: calc(var(--ion-padding) - 6px);
+    padding-left: 14px; /* maybe better with propper css var */
     color: var(--ion-text-color,#000);
   }
 

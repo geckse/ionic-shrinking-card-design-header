@@ -1,7 +1,7 @@
 <div class="app-header">
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-back-button *ngIf="!hideBackBtn" [defaultHref]="backHref" text="" icon="md-arrow-round-back"></ion-back-button>
+      <ion-back-button *ngIf="hideBackBtn != true" [defaultHref]="backHref" text="" icon="md-arrow-round-back"></ion-back-button>
       <ion-menu-button *ngIf="showMenuBtn" mode="md"></ion-menu-button>
     </ion-buttons>
 
