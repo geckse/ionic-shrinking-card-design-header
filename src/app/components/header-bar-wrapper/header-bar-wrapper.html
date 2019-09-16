@@ -1,0 +1,10 @@
+<ion-card class="header-bar-titles" *ngIf="subHeader || header && !slideElements">
+    <ion-card-header>
+      <ion-card-subtitle>{{subHeader ? subHeader : '&nbsp;'}}</ion-card-subtitle>
+      <ion-card-title>{{header ? header : '&nbsp;'}}</ion-card-title>
+    </ion-card-header>
+</ion-card>
+
+<div class="header-bar-context-wrapper">
+  <ng-content></ng-content>
+</div>
